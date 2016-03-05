@@ -44,7 +44,7 @@ sudo mv hadoop /usr/local/
 
 echo "--INFO-- hadoop folder is ready in /usr/local"
 
-cd ~/myscript
+cd ~/hadoopsetup
 echo ""
 echo "--INFO-- updating bashrc file" 
 
