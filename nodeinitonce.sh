@@ -44,6 +44,14 @@ sudo mv hadoop /usr/local/
 
 echo "--INFO-- hadoop folder is ready in /usr/local"
 
+echo ""
+echo "--INFO-- Updating java"
+
+sudo yum install java-devel
+
+echo "--INFO-- java updated"
+
+
 cd ~/hadoopsetup
 echo ""
 echo "--INFO-- updating bashrc file" 
@@ -63,7 +71,13 @@ export YARN_HOME=$HADOOP_INSTALL
 export HADOOP_CONF_DIR=/usr/local/hadoop/etc/hadoop
 export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
 
-echo "--INFO-- bashrc file updated and variables are set"
+echo "--INFO-- bashrc file updated"
+
+echo "--INFO-- PLEASE RELOAD bashrc file using command source ~/.bashrc before starting hadoop"
+
+echo "--INFO-- After that fromat the name node using command hadoop namenode -format"
+
+echo "--INFO-- Make sure pem file is added before starting hadoop cluster"
 
 echo "DONE"
 
