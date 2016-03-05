@@ -1,0 +1,6 @@
+install git and download following repository and follow the steps to setup and start hadoop cluster
+
+----> sudo yum install git
+
+
+----> git clone https://github.com/viyatgandhi/hadoopsetup.git
