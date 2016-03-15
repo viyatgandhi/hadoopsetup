@@ -12,6 +12,10 @@ ssh-add <pemfile>
 
 bin/hdfs dfs -mkdir /user
 bin/hdfs dfs -mkdir /user/ec2-user
+
+/mnt/raid/hadoop/bin/hdfs dfs -mkdir /user
+/mnt/raid/hadoop/bin/hdfs dfs -mkdir /user/ec2-user
+
 hadoop fs -ls
 hadoop fs -mkdir input
 hadoop fs -put terasort.txt input

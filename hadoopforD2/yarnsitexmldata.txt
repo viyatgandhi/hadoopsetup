@@ -40,5 +40,9 @@
       <name>yarn.resourcemanager.admin.address</name>
       <value>ec2-52-90-242-14.compute-1.amazonaws.com:8033</value>
    </property>
+   <property>
+        <name>yarn.nodemanager.resource.memory-mb</name>
+        <value>22528</value>
+</property>   
 </configuration>
 

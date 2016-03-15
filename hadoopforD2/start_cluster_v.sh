@@ -19,8 +19,5 @@ echo ""
 
 echo "--INFO-- Creating proper directory in hdfs"
 
-/mnt/raid/hadoop/bin/hdfs dfs -mkdir /user
-/mnt/raid/hadoop/bin/hdfs dfs -mkdir /user/ec2-user
-
 echo "DONE"
 
