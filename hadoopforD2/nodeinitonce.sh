@@ -15,6 +15,7 @@ then
 echo "--INFO-- procedding with deployment"
 fi
 
+sudo yum update
 
 # prepare directories we need
 cd ~
@@ -40,9 +41,9 @@ wget "https://archive.apache.org/dist/hadoop/core/hadoop-2.7.2/hadoop-2.7.2.tar.
 tar -zxf hadoop-2.7.2.tar.gz
 mv hadoop-2.7.2 hadoop
 rm hadoop-2.7.2.tar.gz
-sudo mv hadoop /mnt/raid/
+sudo mv hadoop /usr/local/
 
-echo "--INFO-- hadoop folder is ready in /mnt/raid/"
+echo "--INFO-- hadoop folder is ready in /usr/local/"
 
 echo ""
 echo "--INFO-- Updating java"
@@ -51,23 +52,23 @@ sudo yum install java-devel
 
 echo "--INFO-- java updated"
 
-cd ~/hadoopsetup
+cd ~/hadoopsetup/hadoopforD2
 echo ""
 echo "--INFO-- updating bashrc file" 
 
 cat basharcdata.txt >> ~/.bashrc
 
-export CONF=/mnt/raid/hadoop/etc/hadoop
+export CONF=/usr/local/hadoop/etc/hadoop
 export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.95.x86_64
-export HADOOP_PREFIX=/mnt/raid/hadoop
-export HADOOP_INSTALL=/mnt/raid/hadoop
+export HADOOP_PREFIX=/usr/local/hadoop
+export HADOOP_INSTALL=/usr/local/hadoop
 export PATH=$PATH:$HADOOP_INSTALL/bin
 export PATH=$PATH:$HADOOP_INSTALL/sbin
 export HADOOP_MAPRED_HOME=$HADOOP_INSTALL
 export HADOOP_COMMON_HOME=$HADOOP_INSTALL
 export HADOOP_HDFS_HOME=$HADOOP_INSTALL
 export YARN_HOME=$HADOOP_INSTALL
-export HADOOP_CONF_DIR=/mnt/raid/hadoop/etc/hadoop
+export HADOOP_CONF_DIR=/usr/local/hadoop/etc/hadoop
 export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
 export _JAVA_OPTIONS=-Djava.io.tmpdir=/mnt/raid/tmp/
 

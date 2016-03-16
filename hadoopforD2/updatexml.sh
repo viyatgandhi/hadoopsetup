@@ -23,9 +23,9 @@ echo "--INFO-- Updating original xml files"
 echo ""
 echo "--INFO-- Updating core-site.xml"
 
-cat /dev/null > /mnt/raid/hadoop/etc/hadoop/core-site.xml
+cat /dev/null > /usr/local/hadoop/etc/hadoop/core-site.xml
 
-cat coresitexmldata.txt >> /mnt/raid/hadoop/etc/hadoop/core-site.xml
+cat coresitexmldata.txt >> /usr/local/hadoop/etc/hadoop/core-site.xml
 
 echo ""
 echo "--INFO core-site.xml updated"
@@ -33,9 +33,9 @@ echo "--INFO core-site.xml updated"
 echo ""
 echo "--INFO-- Updating hdfs-site.xml"
 
-cat /dev/null > /mnt/raid/hadoop/etc/hadoop/hdfs-site.xml
+cat /dev/null > /usr/local/hadoop/etc/hadoop/hdfs-site.xml
 
-cat hdfssitexmldata.txt >> /mnt/raid/hadoop/etc/hadoop/hdfs-site.xml
+cat hdfssitexmldata.txt >> /usr/local/hadoop/etc/hadoop/hdfs-site.xml
 
 echo ""
 echo "--INFO hdfs-site.xml updated"
@@ -43,9 +43,9 @@ echo "--INFO hdfs-site.xml updated"
 echo ""
 echo "--INFO-- Updating yarn-site.xml"
 
-cat /dev/null > /mnt/raid/hadoop/etc/hadoop/yarn-site.xml
+cat /dev/null > /usr/local/hadoop/etc/hadoop/yarn-site.xml
 
-cat yarnsitexmldata.txt >> /mnt/raid/hadoop/etc/hadoop/yarn-site.xml
+cat yarnsitexmldata.txt >> /usr/local/hadoop/etc/hadoop/yarn-site.xml
 
 echo ""
 echo "--INFO yarn-site.xml updated"
@@ -53,11 +53,11 @@ echo "--INFO yarn-site.xml updated"
 echo ""
 echo "--INFO-- Updating mapred-site.xml"
 
-cp  /mnt/raid/hadoop/etc/hadoop/mapred-site.xml.template  /mnt/raid/hadoop/etc/hadoop/mapred-site.xml
+cp  /usr/local/hadoop/etc/hadoop/mapred-site.xml.template  /usr/local/hadoop/etc/hadoop/mapred-site.xml
 
-cat /dev/null > /mnt/raid/hadoop/etc/hadoop/mapred-site.xml
+cat /dev/null > /usr/local/hadoop/etc/hadoop/mapred-site.xml
 
-cat mapredsitexmldata.txt >> /mnt/raid/hadoop/etc/hadoop/mapred-site.xml
+cat mapredsitexmldata.txt >> /usr/local/hadoop/etc/hadoop/mapred-site.xml
 
 echo ""
 echo "--INFO mapred-site.xml updated"

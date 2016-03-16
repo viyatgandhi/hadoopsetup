@@ -3,10 +3,10 @@
 
 echo "--INFO-- Updating slaves file"
 
-cat /dev/null > /mnt/raid/hadoop/etc/hadoop/slaves
+cat /dev/null > /usr/local/hadoop/etc/hadoop/slaves
 
 
-cat slavesinput.txt >> /mnt/raid/hadoop/etc/hadoop/slaves
+cat slavesinput.txt >> /usr/local/hadoop/etc/hadoop/slaves
 
 echo ""
 echo "--INFO slaves file updated"

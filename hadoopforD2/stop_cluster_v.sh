@@ -5,7 +5,7 @@
 echo "--INFO-- Stopping yarn script"
 echo ""
 
-/mnt/raid/hadoop/sbin/stop-yarn.sh
+/usr/local/hadoop/sbin/stop-yarn.sh
 
 echo "--INFO-- yarn script stopped"
 echo ""
@@ -13,7 +13,7 @@ echo ""
 echo "--INFO-- Stopping dfs script"
 echo ""
 
-/mnt/raid/hadoop/sbin/stop-dfs.sh
+/usr/local/hadoop/sbin/stop-dfs.sh
 
 echo "--INFO-- dfs script stopped"
 echo ""
