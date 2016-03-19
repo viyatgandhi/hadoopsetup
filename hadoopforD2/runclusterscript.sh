@@ -11,7 +11,7 @@ ip="$user$rec$folder"
 
 #echo $ip
 
-scp -i krPA2Cloud.pem slaves $ip
+scp -i vCloud.pem slaves $ip
 
 done
 
@@ -24,8 +24,8 @@ echo ""
 echo "Running raid script and copy slave file on slave $ip"
 echo ""
 
-ssh -i  krPA2Cloud.pem $ip '/home/ec2-user/hadoopsetup/hadoopforD2/prepareraid.sh'
+ssh -i  vCloud.pem $ip '/home/ec2-user/hadoopsetup/hadoopforD2/prepareraid.sh'
 
-ssh -i  krPA2Cloud.pem $ip '/home/ec2-user/hadoopsetup/hadoopforD2/copynewslave.sh'
+ssh -i  vCloud.pem $ip '/home/ec2-user/hadoopsetup/hadoopforD2/copynewslave.sh'
 
 done

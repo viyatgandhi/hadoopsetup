@@ -1,6 +1,6 @@
 export CONF=/usr/local//hadoop/etc/hadoop
 export JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.95.x86_64
-export HADOOP_PREFIX=/usr/local//hadoop
+export HADOOP_PREFIX=/usr/local/hadoop
 export HADOOP_INSTALL=/usr/local//hadoop
 export PATH=$PATH:$HADOOP_INSTALL/bin
 export PATH=$PATH:$HADOOP_INSTALL/sbin
@@ -10,4 +10,3 @@ export HADOOP_HDFS_HOME=$HADOOP_INSTALL
 export YARN_HOME=$HADOOP_INSTALL
 export HADOOP_CONF_DIR=/usr/local//hadoop/etc/hadoop
 export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
-export _JAVA_OPTIONS=-Djava.io.tmpdir=/mnt/raid/tmp/

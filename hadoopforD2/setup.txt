@@ -4,27 +4,3 @@ install git and download following repository and follow the steps to setup and 
 
 
 ----> git clone https://github.com/viyatgandhi/hadoopsetup.git
-
-IMP COMMANDS
-
-eval `ssh-agent -s`
-ssh-add <pemfile>
-
-bin/hdfs dfs -mkdir /user
-bin/hdfs dfs -mkdir /user/ec2-user
-
-/mnt/raid/hadoop/bin/hdfs dfs -mkdir /user
-/mnt/raid/hadoop/bin/hdfs dfs -mkdir /user/ec2-user
-
-hadoop fs -ls
-hadoop fs -mkdir input
-hadoop fs -put terasort.txt input
-
-
-hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.2.jar terasort input output
-
-hadoop fs -get output/part-r-00000 .
-
-hadoop com.sun.tools.javac.Main *.java
-jar cf TeraSort.jar Tera*.class
-hadoop jar TeraSort.jar TeraSort input output

@@ -70,7 +70,6 @@ export HADOOP_HDFS_HOME=$HADOOP_INSTALL
 export YARN_HOME=$HADOOP_INSTALL
 export HADOOP_CONF_DIR=/usr/local/hadoop/etc/hadoop
 export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
-export _JAVA_OPTIONS=-Djava.io.tmpdir=/mnt/raid/tmp/
 
 echo "--INFO-- bashrc file updated"
 

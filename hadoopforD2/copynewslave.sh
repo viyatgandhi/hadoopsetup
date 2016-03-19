@@ -6,6 +6,6 @@ cp /home/ec2-user/slaves /usr/local/hadoop/etc/hadoop/
 
 eval `ssh-agent -s`
 
-ssh-add krPA2Cloud.pem
+ssh-add vCloud.pem
 
 echo "Copy done"

@@ -42,7 +42,7 @@
    </property>
    <property>
         <name>yarn.nodemanager.resource.memory-mb</name>
-        <value>26528</value>
+        <value>28672</value>
 </property>   
 </configuration>
 
